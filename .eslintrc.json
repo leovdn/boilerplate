@@ -1,16 +1,14 @@
 {
   "extends": [
-  "next/core-web-vitals",
-  "plugin:react/recommended",
-  "plugin:@typescript-eslint/recommended",
-  "plugin:@typescript-eslint/eslint-recommended"
-],
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
+    "next/core-web-vitals",
+    "next",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "settings": {
     "react": {
       "version": "detect"
@@ -24,4 +22,3 @@
     "@typescript-eslint/explicit-module-boundary-types": "off"
   }
 }
-
