@@ -11,5 +11,3 @@ export default {
 } as Meta
 
 export const Basic: StoryFn = (args) => <Main {...args} />
-
-export const BasicSecondary: StoryFn = (args) => <Main {...args} />
