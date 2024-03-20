@@ -49,7 +49,7 @@ exports[`<Main /> should render the heading 1`] = `
   <h2
     class="c3"
   >
-    TypeScript, ReactJS, Next.Js, Styled Components
+    TypesCript, ReactJS, Next.Js, Styled Components
   </h2>
   <img
     alt="Um desenvolvedor com telas ao lado"
