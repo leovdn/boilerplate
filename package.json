@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "nextjs-jest-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "prepare": "husky install",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "yarn test --watch",
+    "test:ci": "jest --runInBand",
     "storybook": "storybook dev ./public -p 6006",
     "build-storybook": "storybook build ./public"
   },
