@@ -2,12 +2,14 @@
   "name": "nextjs-jest-boilerplate",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "yarn test --watch",
     "test:ci": "jest --runInBand",
@@ -51,6 +53,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-styled-components": "^7.2.0",
     "lint-staged": "^15.2.2",
+    "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "storybook": "^8.0.2",
     "typescript": "^5.4.2"

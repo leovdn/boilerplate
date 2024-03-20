@@ -1,4 +1,4 @@
-const path = require('path')
+import path from 'path'
 
 const buildEslintCommand = (filenames) =>
   `yarn lint --fix --file ${filenames
@@ -6,6 +6,6 @@ const buildEslintCommand = (filenames) =>
     .join(' --file ')}`
 
 
-module.exports = {
-  '*.{js,jsx,ts,tsx}': [buildEslintCommand, 'yarn test --findRelatedTests --bail --passWithNoTests'],
+export default {
+  "**/*.{js,ts,tsx}": [buildEslintCommand, 'yarn test --findRelatedTests --bail --passWithNoTests'],
 }
